@@ -1,1 +1,10 @@
-{}
+{
+  "claimStatusCode": 3438,
+  "enmBenefitType": 1,
+  "messageData": "Important messages",
+  "messageId": 32,
+  "publishDate": "2021-02-21",
+  "nextRptDueDate": "2023-04-24",
+  "programCode": 4543,
+  "netAmount": 32.21
+}

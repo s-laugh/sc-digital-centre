@@ -342,6 +342,7 @@ export default {
   paymentHold: 'Payment on hold',
   inPayment: 'In payment',
   exhausted: 'Benefit exahusted',
+  underReview: 'Under Review',
 
   // dashboard benefit task headers
   estimate: 'Estimate',

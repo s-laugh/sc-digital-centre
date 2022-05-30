@@ -6,4 +6,5 @@ export const StatusCodes = {
   exahusted: 'exhausted',
   decisionSent: 'decisionSent',
   paymentHold: 'paymentHold',
+  underReview: 'underReview',
 }

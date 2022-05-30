@@ -331,6 +331,7 @@ export default {
   benefitUpdate: 'Prestation mise à jour',
   inPayment: 'En paiement',
   exhausted: 'Prestations épuisées',
+  underReview: "En cours d'examen",
 
   // dashboard benefit task headers
   estimate: '(FR)Estimate',

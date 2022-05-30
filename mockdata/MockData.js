@@ -9,7 +9,7 @@ export const mockData = {
     CPP: CPPDefaultUser,
   },
   1: {
-    CPPD: CPPDUser1,
+    CPPD: undefined,
     EI: EIUser1,
   },
   2: {

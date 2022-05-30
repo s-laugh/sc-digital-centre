@@ -6,6 +6,10 @@ export const EIStatus = [
     value: 3433,
     status: StatusCodes.inPayment,
   },
+  {
+    value: 3438,
+    status: StatusCodes.underReview,
+  },
 ]
 
 export const EITypes = [

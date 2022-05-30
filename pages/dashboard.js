@@ -116,13 +116,17 @@ export default function Dashboard(props) {
         ) : null}
 
         {eiLoaded ? null : 'Loading User Benefit Data...'}
-        {eiBenefit ? (
-          <UniversalBenefitCard
-            key={2}
-            locale={props.locale}
-            benefit={eiBenefit}
-          />
-        ) : null}
+        {eiBenefit
+          ? eiBenefit.map((value, index) => {
+              return (
+                <UniversalBenefitCard
+                  key={index}
+                  locale={props.locale}
+                  benefit={value}
+                />
+              )
+            })
+          : null}
 
         {oasLoaded ? null : 'Loading User Benefit Data...'}
         {oasBenefit ? (
@@ -185,7 +189,7 @@ export async function getServerSideProps({ req, res, locale, query }) {
 
   const { userid } = query
   setCookies('userid', userid, { req, res, maxAge: 60 * 6 * 24 })
-
+  console.log(userid)
   if (
     !process.env.AUTH_DISABLED ||
     process.env.AUTH_DISABLED.toLowerCase() !== 'true'
